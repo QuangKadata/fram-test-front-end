@@ -38,7 +38,7 @@ code {
     position: absolute;
     right: 10px;
     top: 5px;
-    background-color: red;
+    background-color: green;
     border: none;
 }
 .ButtonAddNew:hover {
@@ -48,4 +48,8 @@ code {
 .TableEmloyess {
     width: 100%;
     word-break: break-word;
+}
+.nav-link .active {
+    color: white;
+    background-color: lightgrey;
 }

@@ -13,7 +13,7 @@ function Navbar() {
                         src='https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/9fdfae942131961bc5751bd4ceea01ba.jpg'
                         width='60px'
                         height='35px'
-                        alt=''
+                        alt='Logo Fram'
                     />
                     {/* <i className="fa fa-snowflake-o mr-2" aria-hidden="true"/>Test Fram React */}
                 </a>

@@ -1,3 +1,7 @@
+button:active,
+button:focus {
+    outline: none;
+}
 .pagination {
     li {
         width: 30px;
@@ -24,6 +28,41 @@
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+    }
+}
+.form {
+    margin-bottom: 20px;
+    .action {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0 10px 20px;
+            width: 80px;
+            height: 34px;
+            border: 0;
+            border-radius: 4px;
+            color: #fff;
+            font-weight: 500;
+            &.cancel {
+                background-color: #ca0000;
+            }
+            &.save {
+                background-color: #039c0a;
+            }
+        }
+    }
+    .text-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        .mess-validate {
+            margin: 4px 0 0 4px;
+            color: red;
         }
     }
 }
