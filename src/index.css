@@ -31,3 +31,21 @@ code {
     background-color: lightgrey;
     color: red;
 }
+.inputTypeSubmit {
+    width: 100%;
+}
+.ButtonAddNew {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    background-color: red;
+    border: none;
+}
+.ButtonAddNew:hover {
+    transition: all 0.2s;
+    background-color: gray;
+}
+.TableEmloyess {
+    width: 100%;
+    word-break: break-word;
+}

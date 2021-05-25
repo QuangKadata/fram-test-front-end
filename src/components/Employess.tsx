@@ -47,9 +47,18 @@ function Employess() {
     return (
         <Fragment>
             <div className='card' style={{ padding: '10px' }}>
-                <div style={{padding: '20px'}}><button className="btn btn-success" style={{position: 'absolute',right: '10px',top: '5px',backgroundColor: 'red',border: 'none'}} onClick={addPerson}><i className="fa fa-plus mr-1" aria-hidden="true"/>NEW</button></div>
-                <table className='table table-bordered table-hover' style={{ border: '1px solid #fff' }}>
-                
+                {/* <div className="container" style={{padding: '20px'}}>
+                    <button type="submit" className="btn btn-success">ADD</button>
+                </div> */}
+                    <h3>Employess Table</h3>
+                <div style={{ padding: '5px' }}>
+                    <button className='ButtonAddNew btn btn-success mt-2' onClick={addPerson}>
+                        <i className='fa fa-plus mr-1' aria-hidden='true' />
+                        NEW
+                    </button>
+                </div>
+            
+                <table className='table table-bordered table-hover TableEmloyess' style={{ border: '1px solid #fff' }}>
                     <thead>
                         <tr style={{ color: 'red' }}>
                             <th>
@@ -67,6 +76,17 @@ function Employess() {
                         </tr>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td>
+                                <input className='inputTypeSubmit form-control' type='text' placeholder='Ex : Dang Vinh Quang' />
+                            </td>
+                            <td>
+                                <input className='inputTypeSubmit form-control' type='text' placeholder='Ex : Example@gmail.com' />
+                            </td>
+                            <td>
+                                <input className='inputTypeSubmit form-control' type='text' placeholder='Ex : Front End Developer' />
+                            </td>
+                        </tr>
                         {data?.slice(currentPage * itemOfPage, (currentPage + 1) * itemOfPage)?.map((item: any) => {
                             return (
                                 <tr key={item.id}>
