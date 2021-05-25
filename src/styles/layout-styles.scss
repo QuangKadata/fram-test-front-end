@@ -1,0 +1,23 @@
+#content-page {
+    display: flex;
+    height: calc(100vh - 62px);
+    .sidebar {
+        border-right: 1px solid lightgray;
+        width: 300px;
+        transition: all 0.2s;
+        overflow: hidden;
+    }
+    .main-content {
+        padding: 0 20px;
+        flex: auto;
+        overflow-y: auto;
+        transition: all 0.2s;
+    }
+
+    &.hide-sidebar {
+        .sidebar {
+            width: 0;
+            border: 0;
+        }
+    }
+}
