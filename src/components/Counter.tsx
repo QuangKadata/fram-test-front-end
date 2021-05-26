@@ -4,7 +4,7 @@ function Counter() {
     const [counter, setCounter] = React.useState<number>(0)
 
     return (
-        <div className='card' style={{ padding: '10px',borderRadius: '6px',marginTop: '10px' }}>
+        <div className='card Card-Table' style={{ padding: '10px',borderRadius: '6px',marginTop: '10px' }}>
             <div className='container'>
                 <h1 className='text-center' id='title'>
                     Counter

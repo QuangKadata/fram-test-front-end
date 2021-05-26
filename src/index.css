@@ -107,3 +107,6 @@ code {
 .Card-Table {
     box-shadow: 0px 2px 2px lightgrey;
 }
+.navbar-shadow {
+    box-shadow: 1px 0px 3px lightgrey;
+}

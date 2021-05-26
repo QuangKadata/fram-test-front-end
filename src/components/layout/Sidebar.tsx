@@ -6,7 +6,7 @@ const Sidebar = () => {
     }
 
     return (
-        <div className='sidebar' style={{ background: '#f8f9fa' }}>
+        <div className='sidebar navbar-shadow' style={{ background: '#f8f9fa' }}>
             <div className='navbar-collapse' id='navbarsExampleDefault'>
                 <ul className='navbar-nav'>
                     <li>
