@@ -20,12 +20,12 @@ function Navbar() {
                 <button type='button' className='navbar-toggler' data-toggle='collapse' data-target='#navbarCollapse'>
                     <span className='navbar-toggler-icon'></span>
                 </button>
-                <div className='collapse navbar-collapse justify-content-between' id='navbarCollapse'>
+                <div className='collapse navbar-collapse justify-content-between' id='navbarCollapse' style={{transition: 'all 0.2s;'}}>
                     <div className='navbar-nav'>
                     </div>
                     <form className='form-inline'>
                         <div className='input-group'>
-                            <input type='text' className='form-control' width='100' placeholder='Search' />
+                            <input type='text' className='form-control' width='100' placeholder='Search' style={{transition: 'all 0.2s;'}}/>
                             <div className='input-group-append'>
                                 <button type='button' className='btn btn-secondary' style={{ background: 'red', border: 'none' }}>
                                     <i className='fa fa-search'></i>

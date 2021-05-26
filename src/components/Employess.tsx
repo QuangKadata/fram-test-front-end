@@ -66,8 +66,10 @@ function Employess() {
 
     return (
         <Fragment>
-            <div className='card' style={{ padding: '10px', marginTop: '10px', borderRadius: '6px' }}>
-                <h4><i className="fa fa-user-plus mr-2 ml-1" style={{ color: 'green'}} aria-hidden="true"></i>Employess Table</h4>
+            <div className='card Card-Table' style={{ padding: '10px', marginTop: '10px', borderRadius: '6px' }}>
+                <h4>
+                    <i className='fa fa-user-plus mr-2 ml-1' style={{ color: 'green' }} aria-hidden='true'></i>Employess Table
+                </h4>
                 {!isForm && (
                     <div style={{ padding: '5px' }}>
                         <button className='ButtonAddNew btn btn-success mt-2' onClick={() => setShowForm(true)}>
@@ -84,7 +86,7 @@ function Employess() {
                                 <input
                                     className='inputTypeSubmit form-control'
                                     type='text'
-                                    placeholder='Ex : Dang Vinh Quang'
+                                    placeholder='Name'
                                     value={valuesForm.name}
                                     onChange={(e) => onchangeForm('name', e.target.value)}
                                 />
@@ -94,7 +96,7 @@ function Employess() {
                                 <input
                                     className='inputTypeSubmit form-control'
                                     type='text'
-                                    placeholder='Ex : Example@gmail.com'
+                                    placeholder='Email'
                                     value={valuesForm.email}
                                     onChange={(e) => onchangeForm('email', e.target.value)}
                                 />
@@ -114,7 +116,7 @@ function Employess() {
                                 <input
                                     className='inputTypeSubmit form-control'
                                     type='text'
-                                    placeholder='Ex : Front End Developer'
+                                    placeholder='Position'
                                     value={valuesForm.position}
                                     onChange={(e) => onchangeForm('position', e.target.value)}
                                 />

@@ -4,7 +4,7 @@ body {
         'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #eee;
+    background: linear-gradient(100deg, whitesmoke 51%, white 5%, whitesmoke 75%);
 }
 
 code {
@@ -46,10 +46,64 @@ code {
     background-color: gray;
 }
 .TableEmloyess {
+    overflow-x: auto;
     width: 100%;
-    word-break: break-word;
+    /* word-break: break-word; */
 }
 .nav-link .active {
     color: white;
     background-color: lightgrey;
+}
+
+@media (min-width: 0) and (max-width: 500px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    table tbody {
+        display: table;
+        width: 100%;
+    }
+    table thead {
+        display: inline-table;
+        width: 100%;
+    }
+    .inputTypeSubmit {
+        margin-top: 5px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 750px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    table tbody {
+        display: table;
+        width: 100%;
+    }
+    table thead {
+        display: inline-table;
+        width: 100%;
+    }
+    .inputTypeSubmit {
+        margin-top: 5px;
+        width: 100%;
+    }
+}
+@media (min-width: 501) and (max-width: 750px) {
+    .form .text-box {
+        display: inline;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+    }
+    .text-box-item {
+        margin-top: 5px;
+    }
+}
+.Card-Table {
+    box-shadow: 0px 2px 2px lightgrey;
 }

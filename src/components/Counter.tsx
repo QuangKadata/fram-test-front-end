@@ -14,10 +14,10 @@ function Counter() {
                    <p  style={{ color: 'red'}}>{counter}</p>
                     </p>
                     <div className='counter-control' style={{ justifyContent: 'center', display: 'flex',padding: '10px' }}>
-                        <button className='btn btn-success mr-2' onClick={() => setCounter(counter + 1)}>
+                        <button className='btn btn-success mr-2' style={{width: '100px'}} onClick={() => setCounter(counter + 1)}>
                             Increase
                         </button>
-                        <button className='btn btn-outline-secondary' onClick={() => setCounter(0)}>
+                        <button className='btn btn-outline-secondary' style={{width: '100px'}}  onClick={() => setCounter(0)}>
                             Reset
                         </button>
                     </div>
