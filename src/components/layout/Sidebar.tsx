@@ -14,14 +14,18 @@ const Sidebar = () => {
                             <i className='fa fa-chevron-left' style={{ margin: '10px' }} aria-hidden='true'></i>
                         </button>
                     </li>
-
+                    <li className='nav-item'>
+                        <a href='/dashboard' className='nav-link'>
+                            Dashboard
+                        </a>
+                    </li>
                     <li className='nav-item'>
                         <a href='/employess' className='nav-link'>
                             Employess
                         </a>
                     </li>
                     <li className='nav-item'>
-                        <a href='/counter' className='nav-link'>
+                        <a href='/counters' className='nav-link'>
                             Counter
                         </a>
                     </li>

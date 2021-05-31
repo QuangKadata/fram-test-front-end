@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 function Counter() {
+    ///Using State has a default value = 0 
     const [counter, setCounter] = React.useState<number>(0)
 
     return (

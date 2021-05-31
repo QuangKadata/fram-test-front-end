@@ -42,7 +42,7 @@ code {
     border: none;
 }
 .ButtonAddNew:hover {
-    transition: all 0.2s;
+
     background-color: gray;
 }
 .TableEmloyess {
@@ -109,4 +109,13 @@ code {
 }
 .navbar-shadow {
     box-shadow: 1px 0px 3px lightgrey;
+}
+.card-stats{
+    transition: all 0.8s;
+    border-radius: 5px;
+    box-shadow: 1px 0px 4px lightgrey;
+    border: 1px solid lightgray;
+}
+hr{
+    border-top: 1px solid lightgray;
 }
